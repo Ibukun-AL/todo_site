@@ -12,7 +12,7 @@ from .models import Todo
 def index(request):
     todos = Todo.objects.all()
     return render(request, "todo/index.html", {"todo_list": todos})
-    # return HttpResponse("Hello World!!")
+ 
 
 
 @require_http_methods(["POST"])

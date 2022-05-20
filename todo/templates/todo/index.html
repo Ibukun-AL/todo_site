@@ -7,12 +7,14 @@
     <title>Todo App</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 </head>
 
 <body>
-    <div style="margin-top: 50px;" class="ui container">
-        <h1 class="ui center aligned header">To Do App</h1>
+    <div class="ui container mt-12">
+       
+        <h1 class="text-center text-4xl font-bold">To Do App</h1>
 
         <form class="ui form" action="/add" method="post">
             {% csrf_token %}
